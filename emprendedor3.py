@@ -1,13 +1,15 @@
 #importando math para los calculos
 import math as m
 
-# Cálculo de utilidades
+# Cálculo de utilidades según fórmula
 
 Precio_Suscripcion = float(input("ingrese precio de suscripción:"))
 Usuarios_normales = int(input("ingrese número de usuarios normales : "))
 
 Gastos = float(input("ingrese gastos totales: "))
 Utilidad_anterior = float(input("ingrese las utilidades del año anterior en pesos, para el cálculo de la razón este debe ser diferente de cero: "))
+
+# se deja leyeda por i se ingresa el valor 0 en las utilidades anteriores 
 
 if Utilidad_anterior == 0:
     print("no se puede calcular la razón ya que ingresó el valor cero en la utilidades anteriores")
